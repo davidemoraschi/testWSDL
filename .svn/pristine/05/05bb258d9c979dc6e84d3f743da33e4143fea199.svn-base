@@ -1,0 +1,136 @@
+﻿namespace testWSDL
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.button1 = new System.Windows.Forms.Button();
+            this.txtResult = new System.Windows.Forms.TextBox();
+            this.btnConnect = new System.Windows.Forms.Button();
+            this.btnExec = new System.Windows.Forms.Button();
+            this.btnGetResult = new System.Windows.Forms.Button();
+            this.webResult = new System.Windows.Forms.WebBrowser();
+            this.txtMaxRows = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Test Service";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtResult
+            // 
+            this.txtResult.Location = new System.Drawing.Point(12, 44);
+            this.txtResult.Multiline = true;
+            this.txtResult.Name = "txtResult";
+            this.txtResult.Size = new System.Drawing.Size(386, 442);
+            this.txtResult.TabIndex = 1;
+            // 
+            // btnConnect
+            // 
+            this.btnConnect.Location = new System.Drawing.Point(93, 15);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(75, 23);
+            this.btnConnect.TabIndex = 2;
+            this.btnConnect.Text = "Connect";
+            this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
+            // 
+            // btnExec
+            // 
+            this.btnExec.Location = new System.Drawing.Point(174, 15);
+            this.btnExec.Name = "btnExec";
+            this.btnExec.Size = new System.Drawing.Size(75, 23);
+            this.btnExec.TabIndex = 3;
+            this.btnExec.Text = "ExecuteReport ";
+            this.btnExec.UseVisualStyleBackColor = true;
+            this.btnExec.Click += new System.EventHandler(this.btnSimpleExec_Click);
+            // 
+            // btnGetResult
+            // 
+            this.btnGetResult.Location = new System.Drawing.Point(255, 15);
+            this.btnGetResult.Name = "btnGetResult";
+            this.btnGetResult.Size = new System.Drawing.Size(75, 23);
+            this.btnGetResult.TabIndex = 4;
+            this.btnGetResult.Text = "GetResult";
+            this.btnGetResult.UseVisualStyleBackColor = true;
+            this.btnGetResult.Visible = false;
+            this.btnGetResult.Click += new System.EventHandler(this.btnGetResult_Click);
+            // 
+            // webResult
+            // 
+            this.webResult.Location = new System.Drawing.Point(414, 12);
+            this.webResult.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webResult.Name = "webResult";
+            this.webResult.Size = new System.Drawing.Size(407, 474);
+            this.webResult.TabIndex = 5;
+            // 
+            // txtMaxRows
+            // 
+            this.txtMaxRows.Location = new System.Drawing.Point(336, 17);
+            this.txtMaxRows.Name = "txtMaxRows";
+            this.txtMaxRows.Size = new System.Drawing.Size(46, 20);
+            this.txtMaxRows.TabIndex = 6;
+            this.txtMaxRows.Text = "2";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(833, 498);
+            this.Controls.Add(this.txtMaxRows);
+            this.Controls.Add(this.webResult);
+            this.Controls.Add(this.btnGetResult);
+            this.Controls.Add(this.btnExec);
+            this.Controls.Add(this.btnConnect);
+            this.Controls.Add(this.txtResult);
+            this.Controls.Add(this.button1);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtResult;
+        private System.Windows.Forms.Button btnConnect;
+        private System.Windows.Forms.Button btnExec;
+        private System.Windows.Forms.Button btnGetResult;
+        private System.Windows.Forms.WebBrowser webResult;
+        private System.Windows.Forms.TextBox txtMaxRows;
+    }
+}
+

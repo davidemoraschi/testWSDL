@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using testWSDL.MicroStrategy;
+//using testWSDL.microstrategy;
+
+namespace testWSDL
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //var a MicroStrategy.
+            MSTRWSSoapClient mstr = new MSTRWSSoapClient("MSTRWSSoap");
+            //mstr.TestService(
+            try
+            {
+                string result = mstr.TestService("eurostrategy.net", "POC - FF01", "Administrator", "PIBdel0,3%");
+                txtResult.Text = result;
+            }
+            catch (Exception soapex)
+            {
+                //txtResult.Text = soapex.InnerException.ToString();
+                throw;
+            }
+
+        }
+    }
+}
